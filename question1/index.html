@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question1</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#" class="form">
+            <div class="fullName">
+                <input type="text" name="firstName" id="fName" placeholder="First Name" pattern=".{2,20}">
+                <input type="text" name="lastName" id="lName" placeholder="Last Name" pattern=".{2,20}">  
+            </div>
+            <input type="email" 
+                name="emailName" 
+                id="email" 
+                placeholder="Email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                required
+            >  
+            <input type="text" name="subjectN" id="subject" placeholder="Subject" pattern=".{20,200}">    
+            <textarea name="messageN" id="message" cols="10" rows="4" placeholder="Message"></textarea>
+            <div class="btn">
+                <button type="submit" name="submit" id="submitBtn">SEND</button>
+                <button type="reset" name="reset" id="resetBtn">RESET</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
